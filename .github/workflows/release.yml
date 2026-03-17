@@ -35,7 +35,7 @@ jobs:
       - name: Build wheels
         run: python -m cibuildwheel --output-dir dist
         env:
-          CIBW_BEFORE_BUILD: pip install cython==3.0.8 "tree-sitter==0.21.3" && python build.py
+          CIBW_BEFORE_BUILD: pip install setuptools cython==3.0.8 "tree-sitter==0.21.3" && python build.py
           CIBW_TEST_REQUIRES: pytest
           CIBW_TEST_COMMAND: pytest --showlocals {package}/tests
           CIBW_SKIP: "{cp36*,cp37*,cp38*,cp313*,pp*}"

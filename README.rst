@@ -1,29 +1,36 @@
-==================================================
-Python Bindings for Tree Sitter with All Languages
-==================================================
+================================================================
+Python Bindings for Tree Sitter with All Languages (Win ARM64)
+================================================================
 
-Binary Python wheels for all tree sitter languages.
+Binary Python wheels for all tree sitter languages, **with Windows ARM64 support**.
+
+This is a fork of `py-tree-sitter-languages`_ that adds Windows ARM64 (``win_arm64``)
+wheel builds. The upstream project does not publish wheels for Windows on ARM.
+
+.. _`py-tree-sitter-languages`: https://github.com/grantjenks/py-tree-sitter-languages
 
 `py-tree-sitter`_ is a fantastic library that provides Python bindings for the
 even more fantastic `tree-sitter`_ parsing library.
 
-`py-tree-sitter-languages`_ provides binary Python wheels for all tree sitter
-languages. The binary wheels remove the need to download and compile support
-for individual languages.
+This package provides binary Python wheels for all tree sitter languages.
+The binary wheels remove the need to download and compile support for
+individual languages.
 
-.. _`py-tree-sitter-languages`: https://github.com/grantjenks/py-tree-sitter-languages
+Platforms
+=========
 
-Status
-===========
+This fork builds wheels for:
 
-This library is unmaintained, as an alternative you can use .. _`tree-sitter-language-pack`: https://github.com/Goldziher/tree-sitter-language-pack
+* Linux x86_64 and aarch64
+* macOS x86_64 and arm64
+* **Windows AMD64 and ARM64**
 
 Install
 =======
 
 ::
 
-   pip install tree_sitter_languages
+   pip install tree_sitter_languages_win_arm64
 
 Source installs are not supported. To see how the binary wheels are built, look
 at:

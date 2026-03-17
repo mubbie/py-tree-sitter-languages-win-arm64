@@ -12,22 +12,23 @@ with open('README.rst') as reader:
     readme = reader.read()
 
 setuptools.setup(
-    name='tree_sitter_languages',
+    name='tree_sitter_languages_win_arm64',
     version=version,
-    description='Binary Python wheels for all tree sitter languages.',
+    description='Binary Python wheels for all tree sitter languages, with Windows ARM64 support.',
     long_description=readme,
     author='Grant Jenks',
     author_email='contact@grantjenks.com',
-    url='https://github.com/grantjenks/py-tree-sitter-languages',
+    url='https://github.com/mubbie/py-tree-sitter-languages-win-arm64',
     license='Apache 2.0',
     ext_modules=cythonize('tree_sitter_languages/core.pyx', language_level='3'),
     packages=['tree_sitter_languages'],
     package_data={'tree_sitter_languages': ['languages.so', 'languages.dll']},
     install_requires=['tree-sitter'],
     project_urls={
-        'Documentation': 'https://github.com/grantjenks/py-tree-sitter-languages',
-        'Source': 'https://github.com/grantjenks/py-tree-sitter-languages',
-        'Tracker': 'https://github.com/grantjenks/py-tree-sitter-languages/issues',
+        'Documentation': 'https://github.com/mubbie/py-tree-sitter-languages-win-arm64',
+        'Source': 'https://github.com/mubbie/py-tree-sitter-languages-win-arm64',
+        'Tracker': 'https://github.com/mubbie/py-tree-sitter-languages-win-arm64/issues',
+        'Upstream': 'https://github.com/grantjenks/py-tree-sitter-languages',
     },
     classifiers=[
         'Development Status :: 5 - Production/Stable',
